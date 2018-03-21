@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Two way data binding</title>
+    </head>
+    <body>
+        
+        <div id="app">
+            <input type="text" name="nome" id="nome" placeholder="Informe seu nome" v-model:value="inpt"/>
+            <!-- O VALOR DESSE INPT SERÁ O VALOR DECLARDO NO DATA, OU SEJA O VALOR DEFAULT ATRIBUÍDO A ELE -->
+            <h4 v-once>{{ inpt }}</h4>
+            <p>{{ inpt }}</p>
+            <p>{{ inpt }}</p>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script>
+            new Vue({
+                el: "#app",
+                data: {
+                    inpt: ''
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hello World Vue JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div id="app">
+        {{ title }}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+        new Vue({
+            // ELEMENTO PRINCIPAL DO VUE
+            el: '#app',
+            // ELEMENTO RESPONSAVEL PARA ARMAZENAR AS VARIAS E SEUS RESPECTIVOS VALORES
+            data: {
+                title: "Hello World"
+            }
+        });
+    </script>
+</body>
+</html>
