@@ -9,14 +9,8 @@
     <body>
         
         <div id="app">
-            <input type="text" @keyup="count++">
-            <hr/>
-            <button @click="count++">Incrementar</button>
-            {{ count }}
-            <button @click="count--">Decrementar</button>
-            <hr>
-            <input type="text" @keyup="getParameters"/>
-            {{ length }}
+            <input type="text" @keyup.enter="getParameters">
+            <
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script>
@@ -29,8 +23,7 @@
                 },
                 methods: {
                     getParameters: function(event){
-                        this.length = 255 - event.target.value.length;
-
+                        console.log();
                     }
                 }
             });
