@@ -9,21 +9,19 @@
     <body>
         
         <div id="app">
-            <input type="text" @keyup.enter="getParameters">
-            <
+            <div @click.ctrl.exact="testeEvent">
+                Click Aqui!
+            </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <script>
             new Vue({
                 el: "#app",
                 data: {
-
-                    count: 0,
-                    length: 255
                 },
                 methods: {
-                    getParameters: function(event){
-                        console.log();
+                    testeEvent: function (){
+                        alert("You shoted a event")
                     }
                 }
             });
