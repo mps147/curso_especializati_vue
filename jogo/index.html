@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo 21 Com Vue</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="app">
+            <h1 class="text-center"> {{title}} </h1>
+
+            <div class="row">
+                <div id="player1" class="col-6">
+                    <h1>Player 1</h1>
+                </div>
+
+                <div id="player2" class="col-6">
+                    <h1>Player 1</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/vue/dist/vue.min.js"></script>
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                title: "Jogo 21",
+            }
+        })
+    </script>
+</body>
+
+</html>
