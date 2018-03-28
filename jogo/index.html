@@ -5,22 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Jogo 21 Com Vue</title>
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
     <div class="container">
         <div id="app">
-            <h1 class="text-center"> {{title}} </h1>
+            <div class="row" id="title">
+                <div class="col-12">
+                    <h1 class="text-center"> {{title}} </h1>
+                </div>
+            </div>
 
-            <div class="row">
-                <div id="player1" class="col-6">
+            <div id="chair" class="row">
+                <div id="player1" class="col-6 text-center">
                     <h1>Player 1</h1>
+                    <img class="active" src="assets/player1.png" alt="" srcset="" />
+
+                    <p>
+                        <strong>Points: </strong>
+                        <span class="badge badge-primary">0</span>
+                    </p>
+
+                    <p>
+                        <strong>Jogadas: </strong>
+                        <span class="badge badge-secondary">0</span>
+                    </p>
                 </div>
 
-                <div id="player2" class="col-6">
-                    <h1>Player 1</h1>
+                <div id="player2" class="col-6 text-center">
+                    <h1>Player 2</h1>
+                    <img src="assets/player2.png" alt="" srcset="" />
+
+                    <p>
+                        <strong>Points: </strong>
+                        <span class="badge badge-primary">0</span>
+                    </p>
+
+                    <p>
+                        <strong>Jogadas: </strong>
+                        <span class="badge badge-secondary">0</span>
+                    </p>
+                </div>
+            </div>
+            <div id="controls" class="row">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary">Pular</button>
+                    <button class="btn btn-warnig">Finalizar</button>
+                    <button class="btn btn-danger">Resetar</button>
+                </div>
+            </div>
+            <div id="table" class="row text-center">
+                <div class="col-6">
+                    <img class="pack" src="assets/baralho-cartas.png" alt="" id="cards">
+                </div>
+                <div class="col-6">
+                    <img class="carts" src="assets/carts/1.png" alt="" />
                 </div>
             </div>
         </div>

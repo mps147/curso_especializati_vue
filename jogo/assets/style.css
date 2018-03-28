@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0}
+
+#title{
+    
+background-color: #e8943c;
+}
+
+#chair{
+    background-color: #d4d4d4;
+}
+
+.active{
+    background-color: #378c31;
+}
+
+#controls{background-color: #4f53dc;padding: 15px 15px;margin-bottom: 25px;}
+
+#table{
+
+background-color: #378c31;
+
+padding: 30px 15px;
+
+border-radius: 35px;
+}
+
+#table img{
+    max-width: 60%;
+}
+
+#table .carts{
+    width: 55%;
+}
